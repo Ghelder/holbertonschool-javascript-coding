@@ -1,7 +1,7 @@
 #!/usr/bin/node
 const request = require('request');
 
-function getMovieTitle(movieId) {
+function getMovieTitle (movieId) {
   const url = `https://swapi-api.hbtn.io/api/films/${movieId}`;
 
   request.get(url, (error, response, body) => {
